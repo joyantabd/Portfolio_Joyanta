@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import tic from "../../Assets/Projects/tic.png";
+import watch from "../../Assets/Projects/watch.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import smsbangladesh from "../../Assets/Projects/smsbangladesh.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import beach from "../../Assets/Projects/beach.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import quiz from "../../Assets/Projects/quiz.png";
+import calculator from "../../Assets/Projects/calculator.png";
 
 function Projects() {
   return (
@@ -56,35 +58,56 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={tic}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Tic Tac Toe"
+              description="Simple React Game named after Tic Tac Toe. This was made with React.js"
+              ghLink="https://github.com/joyantabd/Tic-Tac-Game"
+              demoLink="https://joyanta-tic-tac-toe.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={beach}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Beach Resort"
+              description="Beach Resport is a Demo Project that was made with React.js. By this project you can search rooms inside a resort,ther rent,size, how many perople can stay. So please click the demo link you will get it in front of you. "
+              ghLink="https://github.com/joyantabd/Resort"
+              demoLink="https://joyanta-react-resort.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={watch}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Stop Watch"
+              description=""
+              ghLink="https://github.com/joyantabd/Joyanta-Stopwatch"
+              demoLink="https://joyantastopwatch.netlify.app/"
+            />
+          </Col>
+        </Row>
+        <Row>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quiz}
+              isBlog={false}
+              title="Simple Quiz App"
+              description="Simple React Quiz App. You can select the option and it will vanishes rest of the option ,after submitting answers it will show how many answer you clicked and whether it is right or wrong"
+              ghLink="https://github.com/joyantabd/Quiz-App"
+              demoLink="https://joyantaquizapp.netlify.app/"
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={calculator}
+              isBlog={false}
+              title="Simple Javascript Calculator"
+              description="Simple Raw Javascript Calculator App. You can do what ever calculation you want from a simple calculator. It was made with raw javascript."
+              ghLink="https://github.com/joyantabd/Simple-Calculator"
+              demoLink="https://joyantabd.github.io/Simple-Calculator/"
             />
           </Col>
         </Row>
