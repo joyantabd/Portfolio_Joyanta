@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 function Home2() {
   return (
@@ -58,7 +59,7 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={6} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
@@ -105,6 +106,9 @@ function Home2() {
                 </a>
               </li>
             </ul>
+          </Col>
+          <Col md={6} className="home-about-social">
+            <ContactForm/>
           </Col>
         </Row>
       </Container>
