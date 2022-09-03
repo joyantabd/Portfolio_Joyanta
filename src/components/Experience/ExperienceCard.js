@@ -10,7 +10,7 @@ function ExperienceCard() {
                   <p style={{ textAlign: "justify" }}>
                   <LightSpeed left>
                       <h3 className="animate-charcter">NAJJ Technologies Ltd.</h3><br/></LightSpeed>
-                      <span className="purple">Duration: 01/01/2022 to Continueing </span><br />
+                      <span className="purple">Duration: 01/01/2022 to On going </span><br />
                       I am working as a Software Engineer. I have developed many economic fisible software here
                       which are now live and using to make the business more easier.
                       </p>
