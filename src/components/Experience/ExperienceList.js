@@ -1,49 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Joyanta_Kumer_Sarker.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
+import ExperienceImg from "../../Assets/experience.png";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import ExperienceCard from "./ExperienceCard";
 
-const resumeLink =
-  "https://raw.githubusercontent.com/joyantabd/Portfolio_Joyanta/main/src/Assets/Joyanta_Kumer_Sarker.pdf";
 
 function ExperienceList() {
-  const [width, setWidth] = useState(1200);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
 
-  return (
-    <div>
-      <Container fluid className="resume-section">
+    return (
+      <Container fluid className="about-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+        <Container>
+          <Row style={{ justifyContent: "center", padding: "10px" }}>
+            <Col
+              md={7}
+              style={{
+                justifyContent: "center",
+                paddingTop: "30px",
+                paddingBottom: "50px",
+              }}
+            >
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                Where I Have <strong className="purple">WORKED</strong>
+              </h1>
+              <ExperienceCard />
+            </Col>
+            <Col
+              md={5}
+              style={{ paddingTop: "120px", paddingBottom: "50px" }}
+              className="about-img"
+            >
+              <img src={ExperienceImg} alt="about" className="img-fluid" />
+            </Col>
+          </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        
+  
+        </Container>
       </Container>
-    </div>
-  );
+    );
 }
 
 export default ExperienceList;
