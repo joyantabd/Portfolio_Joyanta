@@ -17,7 +17,7 @@ function ExperienceCard() {
               </blockquote><br />
               <blockquote className="blockquote mb-0">
               <p style={{ textAlign: "justify" }}>
-              <LightSpeed left><h3 className="animate-charcter">LJB Group Ltd.</h3><br/>
+              <LightSpeed left><h3 className="animate-charcter">TORUN IT Ltd.</h3><br/>
                       <span className="purple">Duration: 01/06/2020 to 31/12/2022 </span><br /></LightSpeed>
                       I had worked as an IT Support Enginner in this company. Main responsibility was to develop and maintain a good
                       quality of comminucation between the IT related devices.
