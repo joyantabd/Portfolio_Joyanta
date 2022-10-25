@@ -4,10 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import tic from "../../Assets/Projects/tic.png";
 import watch from "../../Assets/Projects/watch.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import smsbangladesh from "../../Assets/Projects/smsbangladesh.png";
 import beach from "../../Assets/Projects/beach.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import quiz from "../../Assets/Projects/quiz.png";
 import calculator from "../../Assets/Projects/calculator.png";
 
